@@ -28,7 +28,14 @@ Watch the video below
 https://github.com/user-attachments/assets/123491c0-3746-4ce4-ad88-6f93610c7226
 
 ## Step 2 (Optional)
-This step is for those who have questions which contain multiple responses in their google form.
+This step is for those who have questions which contain multiple responses in their google form. If your form has questions with options containing "**;**" in them, then add "**;**" in brackets.
+
+![image](https://github.com/user-attachments/assets/e27c3584-0eea-4d0e-9b4f-a6336631d1b3)
+
+Add "**;**" in brackets "()"
+
+![image](https://github.com/user-attachments/assets/f0fac3ec-9fa4-491c-808a-827905a14c22)
+
 
 Watch the video below
 
@@ -41,11 +48,11 @@ https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/MultipleToSingl
 ## Step 2 alt (Optional)
 This step is for those who followed step 1 alt, and have questions which contain multiple responses in their google form.
 
-Dont use Step 2, If you used Step 1 alt, use Step 2 alt. If your form questions with multiple options contain , in them, then add it with brackets.
+Dont use Step 2, If you used Step 1 alt, use Step 2 alt. If your form has questions with options containing "**,**" in them, then add "**,**" in brackets.
 
 ![image](https://github.com/user-attachments/assets/eb316ee6-2ada-4906-b6ab-2f43f77720f5)
 
-Add it in brackets
+Add "**,**" in brackets "()"
 
 ![image](https://github.com/user-attachments/assets/36e88a11-5b4e-4a85-9730-d21f544fdf4a)
 
