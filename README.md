@@ -48,7 +48,7 @@ Watch the video below
 https://github.com/user-attachments/assets/4a8ac043-a08d-4164-b89a-7aadc7480c57
 
 
-Download step 2 software from here:
+Download step 2 alt software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/MultipleToSingleResponses.exe
 
@@ -62,7 +62,7 @@ Watch the video below
 https://github.com/user-attachments/assets/fe1b264b-17ff-45b7-9a3b-e8b197691b2d
 
 
-Download step 2 software from here:
+Download step 3 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/autoMapping.exe
 
@@ -74,7 +74,7 @@ Watch the video below
 https://github.com/user-attachments/assets/6ac2b890-76cb-4a80-b175-bb8956d4a07d
 
 
-Download step 2 software from here:
+Download step 4 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/formToNumber.exe
 
@@ -97,6 +97,6 @@ Part 3
 https://github.com/user-attachments/assets/ebda42f2-60ac-4ad3-b6fa-5bbc5eb637ab
 
 
-Download step 2 software from here:
+Download step 5 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/formToSPSS.exe
