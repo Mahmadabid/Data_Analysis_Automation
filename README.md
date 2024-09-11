@@ -100,3 +100,8 @@ https://github.com/user-attachments/assets/ebda42f2-60ac-4ad3-b6fa-5bbc5eb637ab
 Download step 5 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/formToSPSS.exe
+
+## Step 6 (Optional)
+This step is for those who have questions which contain multiple responses in their google form.
+
+[Watch this youtube video](https://youtu.be/qgzD1-la6Pg)
