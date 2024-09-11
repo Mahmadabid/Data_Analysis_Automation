@@ -41,7 +41,14 @@ https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/MultipleToSingl
 ## Step 2 alt (Optional)
 This step is for those who followed step 1 alt, and have questions which contain multiple responses in their google form.
 
-Dont use Step 2, If you used Step 1 alt, use Step 2 alt
+Dont use Step 2, If you used Step 1 alt, use Step 2 alt. If your form questions with multiple options contain , in them, then add it with brackets.
+
+![image](https://github.com/user-attachments/assets/eb316ee6-2ada-4906-b6ab-2f43f77720f5)
+
+Add it in brackets
+
+![image](https://github.com/user-attachments/assets/36e88a11-5b4e-4a85-9730-d21f544fdf4a)
+
 
 Watch the video below
 
