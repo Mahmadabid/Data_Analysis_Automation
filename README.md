@@ -16,6 +16,8 @@ Download step 1 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/csvToExcel.exe
 
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
+
 ## Step 1 alt
 This step is for those who directly downloaded their excel sheet.
 
@@ -45,6 +47,8 @@ Download step 2 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/MultipleToSingle.exe
 
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
+
 ## Step 2 alt (Optional)
 This step is for those who followed step 1 alt, and have questions which contain multiple responses in their google form.
 
@@ -66,6 +70,8 @@ Download step 2 alt software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/MultipleToSingleResponses.exe
 
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
+
 ## Step 3
 Whether you followed alt guide or normal. From here all the steps will be same.
 
@@ -80,6 +86,8 @@ Download step 3 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/autoMapping.exe
 
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
+
 ## Step 4
 This step is to convert your form responses to numbers. If your form contain questions with multiple answers then use output of step 2, or step 2 alt (if you followed step 2 alt). Otherwise use output of step 1, or step 1 alt (if you followed step 1 alt).
 
@@ -92,6 +100,7 @@ Download step 4 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/formToNumber.exe
 
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
 
 ## Step 5
 This step is to create Spss variable view. If your form contain questions with multiple answers then use output of step 2, or step 2 alt (if you followed step 2 alt). Otherwise use output of step 1, or step 1 alt (if you followed step 1 alt).
@@ -114,6 +123,8 @@ https://github.com/user-attachments/assets/ebda42f2-60ac-4ad3-b6fa-5bbc5eb637ab
 Download step 5 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/formToSPSS.exe
+
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
 
 ## Step 6 (Optional)
 This step is for those who have questions which contain multiple responses in their google form.
