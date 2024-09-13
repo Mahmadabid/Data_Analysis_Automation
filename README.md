@@ -1,5 +1,5 @@
 # Data Analysis Automation
-
+This data automation process converts Google Form responses into a format ready for analysis in IBM SPSS. It covers downloading and converting data, handling multiple responses, mapping answers to numbers, and creating SPSS Variable Views for streamlined analysis.
 
 #### Download Spss free from IBM website
 [Watch this youtube video](https://www.youtube.com/watch?v=B-Uox1EKefo)
@@ -19,11 +19,9 @@ https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/csvToExcel.exe
 Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
 
 ## Step 1 alt
-This step is for those who directly downloaded their excel sheet.
+This step is for those who directly downloaded their excel sheet. Instead of following Step 1.
 
 You have to manually prepare file for pandas.
-
-Instead of following Step 1
 
 Watch the video below
 
