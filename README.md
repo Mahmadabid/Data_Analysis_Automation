@@ -39,7 +39,7 @@ Add "**;**" in brackets "()"
 
 Watch the video below
 
-https://github.com/user-attachments/assets/c6a73e7a-a94c-476b-8223-d71b719113c5
+https://github.com/user-attachments/assets/2113d243-5934-4817-9e94-9ea598bcbd43
 
 Download step 2 software from here:
 
