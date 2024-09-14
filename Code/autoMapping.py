@@ -29,6 +29,23 @@ def process_file(input_file, output_file, cols_to_skip, sheet_name):
             showerror("Error", "Columns to skip must be integers.")
             return
 
+        # Function to check if a column contains only numbers (integers or floats)
+        def is_numeric_column(column):
+            try:
+                pd.to_numeric(column, errors='raise')
+                return True
+            except ValueError:
+                return False
+
+        # Identify columns that contain only numbers
+        numeric_columns = [i for i, col in enumerate(df.columns) if is_numeric_column(df.iloc[:, i])]
+        
+        # Update cols_to_skip to include numeric columns
+        cols_to_skip.extend(numeric_columns)
+        
+        # Ensure we do not have duplicates and sort
+        cols_to_skip = list(sorted(set(cols_to_skip)))
+        
         max_index = len(df.columns) - 1
         cols_to_skip = [i for i in cols_to_skip if 0 <= i <= max_index]
 
@@ -39,7 +56,7 @@ def process_file(input_file, output_file, cols_to_skip, sheet_name):
             unique_responses = pd.unique(stripped_responses)
 
             # Start with predefined mappings
-            response_mapping = {'Yes': 1, 'No': 2}
+            response_mapping = {'Yes': 1, 'No': 0}
 
             # Enumerate starting from 1 for new responses
             current_index = 1

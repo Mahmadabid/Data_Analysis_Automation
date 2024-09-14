@@ -25,11 +25,29 @@ def select_output_file(default_name="output.xlsx"):
     )  # Return the default if no file selected
 
 
-def process_file(input_file, output_file, keep_original_columns, sheet_name):
+def process_file(input_file, output_file, cols_to_skip, keep_original_columns, sheet_name):
     try:
-        # Load the Excel files
+        # Load the Excel file
         df = pd.read_excel(input_file, sheet_name=sheet_name)
- 
+
+        try:
+            cols_to_skip = [int(col.strip()) - 1 for col in cols_to_skip if col.strip()]
+        except ValueError:
+            showerror("Error", "Columns to skip must be integers.")
+            return
+        
+        # Ensure we do not have duplicates and sort
+        cols_to_skip = list(sorted(set(cols_to_skip)))
+        
+        max_index = len(df.columns) - 1
+        cols_to_skip = [i for i in cols_to_skip if 0 <= i <= max_index]
+
+        # Columns to be skipped
+        skipped_columns = [df.columns[i] for i in cols_to_skip]
+        
+        # Columns to process
+        columns_to_process = [col for col in df.columns if col not in skipped_columns]
+
         # Function to split by commas outside of brackets
         def split_outside_brackets(text):
             if isinstance(text, str):
@@ -40,7 +58,7 @@ def process_file(input_file, output_file, keep_original_columns, sheet_name):
         # Identify columns with multiple responses
         columns_with_multiple_responses = [
             col
-            for col in df.columns
+            for col in columns_to_process
             if df[col]
             .apply(lambda x: isinstance(x, str) and len(split_outside_brackets(x)) > 1)
             .any()
@@ -49,7 +67,7 @@ def process_file(input_file, output_file, keep_original_columns, sheet_name):
         # Store the original columns to drop them later
         original_columns = []
 
-        # Expand each column with multiple responses
+        # Process each column with multiple responses
         for col in columns_with_multiple_responses:
             # Get unique responses across all rows, including None values
             unique_responses = []
@@ -95,6 +113,10 @@ def process_file(input_file, output_file, keep_original_columns, sheet_name):
         if not keep_original_columns:
             df.drop(columns=original_columns, inplace=True)
 
+        # Re-add the skipped columns back to the DataFrame
+        for col in skipped_columns:
+            df[col] = pd.read_excel(input_file, sheet_name=sheet_name, usecols=[col])[col]
+
         # Try to save the standardized DataFrame to a new Excel file
         try:
             df.to_excel(output_file, index=False)
@@ -108,7 +130,6 @@ def process_file(input_file, output_file, keep_original_columns, sheet_name):
     except Exception as e:
         showerror("Error", f"An error occurred: {e}")
 
-
 # GUI Application
 def main():
     root = Tk()
@@ -118,6 +139,7 @@ def main():
     output_file = None
     sheet_name = StringVar()
     keep_columns_var = BooleanVar()
+    cols_to_skip = StringVar()
 
     def load_input_file():
         nonlocal input_file
@@ -143,7 +165,9 @@ def main():
         if not output_file:
             showinfo("Error", "No output file selected.")
             return
-        process_file(input_file, output_file, keep_columns_var.get(), sheet_name.get())
+        
+        cols_to_skip_list = [col.strip() for col in cols_to_skip.get().split(",") if col.strip()]
+        process_file(input_file, output_file, cols_to_skip_list, keep_columns_var.get(), sheet_name.get())
 
     # Create a frame to contain all widgets and add padding to the frame
     main_frame = Frame(root, padx=20, pady=20)
@@ -175,6 +199,10 @@ def main():
     Label(main_frame, text="Sheet Name:").pack(pady=5)
     sheet_dropdown = ttk.Combobox(main_frame, textvariable=sheet_name)
     sheet_dropdown.pack(pady=5)
+
+    Label(main_frame, text="Columns to Skip (comma-separated):").pack(pady=5)
+    cols_to_skip_entry = ttk.Entry(main_frame, textvariable=cols_to_skip)
+    cols_to_skip_entry.pack(pady=5)
 
     # Checkbox for dropping original columns
     keep_columns_checkbox = Checkbutton(
