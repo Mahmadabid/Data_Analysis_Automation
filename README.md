@@ -1,5 +1,5 @@
 # Data Analysis Automation
-
+This data automation process converts Google Form responses into a format ready for analysis in IBM SPSS. It covers downloading and converting data, handling multiple responses, mapping answers to numbers, and creating SPSS Variable Views for streamlined analysis.
 
 #### Download Spss free from IBM website
 [Watch this youtube video](https://www.youtube.com/watch?v=B-Uox1EKefo)
@@ -16,16 +16,17 @@ Download step 1 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/csvToExcel.exe
 
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
+
 ## Step 1 alt
-This step is for those who directly downloaded their excel sheet.
+This step is for those who directly downloaded their excel sheet. Instead of following Step 1.
 
 You have to manually prepare file for pandas.
-
-Instead of following Step 1
 
 Watch the video below
 
 https://github.com/user-attachments/assets/123491c0-3746-4ce4-ad88-6f93610c7226
+
 
 ## Step 2 (Optional)
 This step is for those who have questions which contain multiple responses in their google form. If your form has questions with options containing "**;**" in them, then add "**;**" in brackets.
@@ -39,11 +40,14 @@ Add "**;**" in brackets "()"
 
 Watch the video below
 
-https://github.com/user-attachments/assets/c6a73e7a-a94c-476b-8223-d71b719113c5
+https://github.com/user-attachments/assets/2113d243-5934-4817-9e94-9ea598bcbd43
+
 
 Download step 2 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/MultipleToSingle.exe
+
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
 
 ## Step 2 alt (Optional)
 This step is for those who followed step 1 alt, and have questions which contain multiple responses in their google form.
@@ -59,12 +63,14 @@ Add "**,**" in brackets "()"
 
 Watch the video below
 
-https://github.com/user-attachments/assets/4a8ac043-a08d-4164-b89a-7aadc7480c57
+https://github.com/user-attachments/assets/7953993b-8c93-4d89-9aae-09018e3719cb
 
 
 Download step 2 alt software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/MultipleToSingleResponses.exe
+
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
 
 ## Step 3
 Whether you followed alt guide or normal. From here all the steps will be same.
@@ -80,6 +86,8 @@ Download step 3 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/autoMapping.exe
 
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
+
 ## Step 4
 This step is to convert your form responses to numbers. If your form contain questions with multiple answers then use output of step 2, or step 2 alt (if you followed step 2 alt). Otherwise use output of step 1, or step 1 alt (if you followed step 1 alt).
 
@@ -92,6 +100,7 @@ Download step 4 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/formToNumber.exe
 
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
 
 ## Step 5
 This step is to create Spss variable view. If your form contain questions with multiple answers then use output of step 2, or step 2 alt (if you followed step 2 alt). Otherwise use output of step 1, or step 1 alt (if you followed step 1 alt).
@@ -114,6 +123,8 @@ https://github.com/user-attachments/assets/ebda42f2-60ac-4ad3-b6fa-5bbc5eb637ab
 Download step 5 software from here:
 
 https://github.com/Mahmadabid/Data_Analysis_Automation/blob/main/formToSPSS.exe
+
+Having trouble downloading file, [Watch this video](https://github.com/user-attachments/assets/b986eb07-147f-4d61-9124-57150612b9ed)
 
 ## Step 6 (Optional)
 This step is for those who have questions which contain multiple responses in their google form.
