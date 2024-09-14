@@ -27,6 +27,7 @@ Watch the video below
 
 https://github.com/user-attachments/assets/123491c0-3746-4ce4-ad88-6f93610c7226
 
+
 ## Step 2 (Optional)
 This step is for those who have questions which contain multiple responses in their google form. If your form has questions with options containing "**;**" in them, then add "**;**" in brackets.
 
@@ -40,6 +41,7 @@ Add "**;**" in brackets "()"
 Watch the video below
 
 https://github.com/user-attachments/assets/2113d243-5934-4817-9e94-9ea598bcbd43
+
 
 Download step 2 software from here:
 
@@ -61,7 +63,7 @@ Add "**,**" in brackets "()"
 
 Watch the video below
 
-https://github.com/user-attachments/assets/4a8ac043-a08d-4164-b89a-7aadc7480c57
+https://github.com/user-attachments/assets/7953993b-8c93-4d89-9aae-09018e3719cb
 
 
 Download step 2 alt software from here:
