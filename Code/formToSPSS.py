@@ -135,12 +135,12 @@ def process_file(
         )
         spss_syntax.append(data_list_command + ".")
 
-        # Add VARIABLE LABELS command with labels enclosed in double quotes and single quotes escaped
-        variable_labels_command = "VARIABLE LABELS " + " ".join(
-            f"{name} \"{label.replace('\'', '\'\'')}\""
-            for name, label in zip(combined_df['Name'], combined_df['Label'])
-        )
-        spss_syntax.append(variable_labels_command + ".")
+        # Create VARIABLE LABELS command with each label on a separate line
+        for name, label in zip(combined_df['Name'], combined_df['Label']):
+            # Replace newline characters with a space
+            clean_label = label.replace('\n', ' ').replace('\r', '')
+            variable_labels_command = f"VARIABLE LABELS {name} \"{clean_label.replace('\'', '\'\'')}\"."
+            spss_syntax.append(variable_labels_command)
 
         # Add VARIABLE LEVEL command
         variable_level_command = "VARIABLE LEVEL " + " ".join(
