@@ -1,4 +1,5 @@
 import re
+import numpy as np
 import pandas as pd
 from tkinter import Frame, StringVar, Tk, Button, Label, ttk
 from tkinter.filedialog import askopenfilename, asksaveasfilename
@@ -53,7 +54,12 @@ def process_file(input_file, output_file, cols_to_skip, sheet_name):
 
         def create_mapping(column):
             stripped_responses = column.astype(str).str.strip()
-            unique_responses = pd.unique(stripped_responses)
+
+            # Handle 'nan' as actual NaN values
+            stripped_responses = stripped_responses.replace('nan', np.nan)
+            
+            # Get unique non-null responses
+            unique_responses = pd.unique(stripped_responses.dropna())
 
             # Start with predefined mappings
             response_mapping = {'Yes': 1, 'No': 0}
@@ -61,15 +67,16 @@ def process_file(input_file, output_file, cols_to_skip, sheet_name):
             # Enumerate starting from 1 for new responses
             current_index = 1
             for response in unique_responses:
-                if response not in response_mapping:
+                # Skip if response is empty or already in the mapping
+                if response not in response_mapping and response != '':
                     response_mapping[response] = current_index
                     current_index += 1
 
             return response_mapping
-
+        
         def convert_column(column, mapping):
             stripped_column = column.astype(str).str.strip()
-            return stripped_column.map(mapping).fillna(column)
+            return stripped_column.map(lambda x: mapping.get(x, x) if x != '' else x)
 
         all_mappings = {}
 
